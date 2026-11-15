@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: business-card-api
+    runtime: node
+    plan: free
+    # --include=dev: tsc + the font packages are devDependencies and are needed at build time.
+    buildCommand: npm ci --include=dev && npm run build
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: NODE_VERSION
+        value: 20.18.0
+      - key: NODE_OPTIONS
+        value: --max-old-space-size=384
+      - key: FRONTEND_URL
+        sync: false   # e.g. https://your-app.vercel.app  (comma-separate multiple origins)

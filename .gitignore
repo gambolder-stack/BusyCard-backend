@@ -1,0 +1,6 @@
+node_modules
+dist
+out
+.env
+# NOTE: assets/fonts/*.ttf is intentionally NOT ignored - commit them so the
+# server works offline with zero build-time network access.

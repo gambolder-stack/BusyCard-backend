@@ -1,0 +1,33 @@
+{
+  "standard": "US",
+  "orientation": "horizontal",
+  "front": {
+    "fullName": "Elif Yılmaz",
+    "title": "Product Designer",
+    "company": "Northwind Studio",
+    "email": "elif@northwind.studio",
+    "phone": "+90 532 000 00 00",
+    "website": "northwind.studio",
+    "address": "Bağdat Cd. 12, Kadıköy, Istanbul",
+    "customTagline": "Design that ships."
+  },
+  "back": {
+    "showQrCode": true,
+    "qrType": "vcard",
+    "centerLogoText": "NS",
+    "layout": "minimal"
+  },
+  "theme": {
+    "preset": "midnight",
+    "bgColor": "#ffffff",
+    "textColor": "#111827",
+    "accentColor": "#1d4ed8",
+    "fontFamily": "inter",
+    "fontScale": 1,
+    "paddingScale": 1,
+    "borderWidth": 0,
+    "borderRadius": 0,
+    "paperTexture": "matte",
+    "pattern": "dots"
+  }
+}
